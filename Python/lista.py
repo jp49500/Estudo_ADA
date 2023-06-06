@@ -63,7 +63,7 @@ print('Depois do append: ', lista)
 
 # insert (inserir)
 
-lista.insert(2, 10)
+lista.insert(2, 10) # estou dizendo onde quero inserir o elemento
 print('Depois do insert: ', lista)
 
 # extend 
@@ -79,3 +79,45 @@ print('Depois do extend: ', lista)
 lista.pop()
 
 print('Lista após o pop: ', lista)
+
+lista.pop(0) # removendo elemento pela posição do indice
+print('Lista após o pop: ', lista)
+
+# remove
+
+lista.remove(3) # remove o elemento pelo proprio valor
+# a função vai procurar o numero 3 e o primeiro que encontrar sera removido obs: só remove
+print('Depois do remove', lista)
+
+# count
+
+print('Quantidade de 2 na lista: ', lista.count(2)) # quantidade de elemento pelo valor que tem na lista
+
+# index
+
+print('Indice do elemento 12: ', lista.index(12)) # mostar o index de onde esta o elemento
+
+# sort
+
+lista.sort() # organiza a lista de forma crescente
+print('Lista de maneira crescente',lista)
+lista.sort(reverse=True) # organizando de forma decrescente
+print('Lista de maneira descresente: ', lista)
+
+# Funções para lista
+
+# len
+
+print('Quantos elementos tem na lista: ', len(lista)) # quantos elementos tem na lista
+
+# sum
+
+print('Soma de todos os elementos: ',sum(lista)) # soma todos os elementos da lista]
+
+# max
+
+print('Maior elemento da lista: ', max(lista)) # retorna o maior valor da lista
+
+# min
+
+print('Menor elemento da lista: ', min(lista))
